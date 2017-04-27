@@ -42,7 +42,17 @@ public class RomanConvertersTest {
     }
 
     @Test
+    public void Test_24_is_XXIV() {
+        assertThat(RomanConverters.convert(24), is(equalTo("XXIV")));
+    }
+
+    @Test
     public void Test_26_is_XXVI() {
         assertThat(RomanConverters.convert(26), is(equalTo("XXVI")));
+    }
+
+    @Test
+    public void Test_29_is_XXIX() {
+        assertThat(RomanConverters.convert(29), is(equalTo("XXIX")));
     }
 }
